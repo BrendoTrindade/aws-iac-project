@@ -55,7 +55,7 @@ aws-iac-project/
 
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/seu-usuario/aws-iac-project.git](https://github.com/BrendoTrindade/aws-iac-project.git)
+git clone [https://github.com/BrendoTrindade/aws-iac-project.git]
 cd aws-iac-project
 ```
 
