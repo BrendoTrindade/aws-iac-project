@@ -7,23 +7,17 @@ variable "aws_region" {
 variable "environment" {
   description = "Environment name"
   type        = string
-  default     = "dev"
+  default     = "production"
 }
 
-variable "vpc_cidr" {
-  description = "CIDR block for VPC"
+variable "ecr_repository_url" {
+  description = "URL of the ECR repository"
   type        = string
-  default     = "10.0.0.0/16"
+  default     = "586794479352.dkr.ecr.us-east-1.amazonaws.com/app-repository"
 }
 
-variable "app_name" {
-  description = "Application name"
+variable "image_tag" {
+  description = "Tag of the Docker image to deploy"
   type        = string
-  default     = "devops-project"
-}
-
-variable "container_port" {
-  description = "Port exposed by the docker image"
-  type        = number
-  default     = 80
+  default     = "latest"
 }
