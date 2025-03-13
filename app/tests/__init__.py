@@ -2,8 +2,8 @@ import pytest
 import sys
 import os
 
-# Adiciona o diretório src ao PYTHONPATH
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+# Adicionar o diretório src ao path do Python
+sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 
 from app import app
 
