@@ -55,7 +55,7 @@ aws-iac-project/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/aws-iac-project.git
+git clone [https://github.com/seu-usuario/aws-iac-project.git](https://github.com/BrendoTrindade/aws-iac-project.git)
 cd aws-iac-project
 ```
 
@@ -122,9 +122,5 @@ terraform destroy
 
 ## Contato
 
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
-- Email: seu.email@exemplo.com
-
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- LinkedIn: [Seu Nome]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/brendo-trindade/))
+- Email: brendofut44l@gmail.com
