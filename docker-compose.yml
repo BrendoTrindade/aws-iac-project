@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile.prod
+    ports:
+      - "80:80"
+    environment:
+      - ENVIRONMENT=development
+
+  test:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    command: pytest -v
