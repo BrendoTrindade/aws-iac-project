@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   test:
@@ -24,16 +24,14 @@ jobs:
         pip install pytest
         
     - name: Run tests
-      env:
-        PYTHONPATH: ${{ github.workspace }}/app/src
       run: |
         cd app
-        python -m pytest tests/ -v
+        PYTHONPATH=$PWD/src pytest tests/ -v
 
   build-and-push:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     steps:
     - uses: actions/checkout@v2
     
@@ -60,7 +58,7 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     steps:
     - uses: actions/checkout@v2
     
@@ -85,7 +83,7 @@ jobs:
         terraform plan
         
     - name: Terraform Apply
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
       run: |
         cd terraform
         terraform apply -auto-approve
