@@ -122,5 +122,5 @@ terraform destroy
 
 ## Contato
 
-- LinkedIn: [Seu Nome]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/brendo-trindade/))
+- LinkedIn: [Brendo Trindade]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/brendo-trindade/))
 - Email: brendofut44l@gmail.com
